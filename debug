@@ -1,23 +1,8 @@
-hoanglong@hoanglong:~ $ rpicam-hello
-[0:01:25.779514657] [1457]  INFO Camera camera_manager.cpp:330 libcamera v0.5.2+99-bfd68f78
-Made X/EGL preview window
-ERROR: *** no cameras available ***
-hoanglong@hoanglong:~ $ rpicam-hello
-[0:02:22.317274012] [1475]  INFO Camera camera_manager.cpp:330 libcamera v0.5.2+99-bfd68f78
-Made X/EGL preview window
-ERROR: *** no cameras available ***
-hoanglong@hoanglong:~ $ sudo nano /boot/firmware/config.txt
-hoanglong@hoanglong:~ $ sudo apt update
-Hit:1 http://raspbian.raspberrypi.com/raspbian bookworm InRelease              
-Hit:2 http://archive.raspberrypi.com/debian bookworm InRelease                 
-Reading package lists... Done                                   
-Building dependency tree... Done
-Reading state information... Done
-81 packages can be upgraded. Run 'apt list --upgradable' to see them.
-W: http://raspbian.raspberrypi.com/raspbian/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
-hoanglong@hoanglong:~ $ sudo apt install rpicam-apps libcamera-v4l2--dev
+
+
+hoanglong@hoanglong:~ $ sudo apt install rpicam-apps libcamera-v4l2-dev
 Reading package lists... Done
 Building dependency tree... Done
 Reading state information... Done
-E: Unable to locate package libcamera-v4l2--dev
+E: Unable to locate package libcamera-v4l2-dev
 hoanglong@hoanglong:~ $ 
