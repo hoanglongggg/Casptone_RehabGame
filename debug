@@ -1,8 +1,19 @@
-
-
-hoanglong@hoanglong:~ $ sudo apt install rpicam-apps libcamera-v4l2-dev
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-E: Unable to locate package libcamera-v4l2-dev
-hoanglong@hoanglong:~ $ 
+ffer for Unicam Image
+[0:02:34.481417695] [1869] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 0: Input/output error
+[0:02:34.481515843] [1869] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
+ERROR: Device timeout detected, attempting a restart!!!
+[0:02:34.509955612] [1869] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 1: Input/output error
+[0:02:34.510076039] [1869] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
+[0:02:34.542564539] [1869] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 2: Input/output error
+[0:02:34.542642577] [1869] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
+[0:02:34.574546092] [1869] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 3: Input/output error
+[0:02:34.574637407] [1869] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
+[0:02:34.633316310] [1869] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 0: Input/output error
+[0:02:34.633412921] [1869] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
+ERROR: Device timeout detected, attempting a restart!!!
+[0:02:34.665315807] [1869] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 1: Input/output error
+[0:02:34.665409881] [1869] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
+[0:02:34.690895945] [1869] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 2: Input/output error
+[0:02:34.690983260] [1869] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
+[0:02:34.717319941] [1869] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 3: Input/output error
+[0:02:34.717402571] [1869] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
