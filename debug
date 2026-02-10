@@ -1,4 +1,4 @@
-oanglong@hoanglong:~ $ cat /etc/os-release
+hoanglong@hoanglong:~ $ cat /etc/os-release
 PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
 NAME="Debian GNU/Linux"
 VERSION_ID="13"
@@ -9,7 +9,7 @@ ID=debian
 HOME_URL="https://www.debian.org/"
 SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/"
-hoanglong@hoanglong:~ $ uname -a
-Linux hoanglong 6.12.47+rpt-rpi-v8 #1 SMP PREEMPT Debian 1:6.12.47-1+rpt1 (2025-09-16) aarch64 GNU/Linux
+hoanglong@hoanglong:~ $ libcamera-hello
+bash: libcamera-hello: command not found
 hoanglong@hoanglong:~ $ 
 
