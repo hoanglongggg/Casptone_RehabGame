@@ -1,15 +1,17 @@
-hoanglong@hoanglong:~ $ cat /etc/os-release
-PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
-NAME="Debian GNU/Linux"
-VERSION_ID="13"
-VERSION="13 (trixie)"
-VERSION_CODENAME=trixie
-DEBIAN_VERSION_FULL=13.2
-ID=debian
-HOME_URL="https://www.debian.org/"
-SUPPORT_URL="https://www.debian.org/support"
-BUG_REPORT_URL="https://bugs.debian.org/"
 hoanglong@hoanglong:~ $ libcamera-hello
 bash: libcamera-hello: command not found
+hoanglong@hoanglong:~ $ sudo raspi-config
+hoanglong@hoanglong:~ $ raspistill -t 0
+bash: raspistill: command not found
+hoanglong@hoanglong:~ $ cat /etc/os-release
+PRETTY_NAME="Raspbian GNU/Linux 12 (bookworm)"
+NAME="Raspbian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=raspbian
+ID_LIKE=debian
+HOME_URL="http://www.raspbian.org/"
+SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
+BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
 hoanglong@hoanglong:~ $ 
-
