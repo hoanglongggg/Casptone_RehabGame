@@ -14,4 +14,9 @@ ID_LIKE=debian
 HOME_URL="http://www.raspbian.org/"
 SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
 BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
+hoanglong@hoanglong:~ $ rpicam-hello
+[0:05:21.300213298] [2246]  INFO Camera camera_manager.cpp:330 libcamera v0.5.2+99-bfd68f78
+Made X/EGL preview window
+ERROR: *** no cameras available ***
 hoanglong@hoanglong:~ $ 
+
