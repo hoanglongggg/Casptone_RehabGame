@@ -1,5 +1,216 @@
-hoanglong@hoanglong:~ $ which libcamera-hello
-hoanglong@hoanglong:~ $ libcamera-hello
-bash: libcamera-hello: command not found
-hoanglong@hoanglong:~ $ vcgencmd get_camera
-supported=0 detected=0, libcamera interfaces=0
+hoanglong@hoanglong:~ $ rpicam-hello
+[0:36:24.383695839] [26292]  INFO Camera camera_manager.cpp:330 libcamera v0.5.2+99-bfd68f78
+[0:36:24.430560649] [26297]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/vc4/ov5647.json
+[0:36:24.441394839] [26297]  INFO Camera camera_manager.cpp:220 Adding camera '/base/soc/i2c0mux/i2c@1/ov5647@36' for pipeline handler rpi/vc4
+[0:36:24.441540981] [26297]  INFO RPI vc4.cpp:440 Registered camera /base/soc/i2c0mux/i2c@1/ov5647@36 to Unicam device /dev/media3 and ISP device /dev/media0
+[0:36:24.441635643] [26297]  INFO RPI pipeline_base.cpp:1107 Using configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+Made X/EGL preview window
+Mode selection for 1296:972:12:P
+    SGBRG10_CSI2P,640x480/0 - Score: 3296
+    SGBRG10_CSI2P,1296x972/0 - Score: 1000
+    SGBRG10_CSI2P,1920x1080/0 - Score: 1349.67
+    SGBRG10_CSI2P,2592x1944/0 - Score: 1567
+Stream configuration adjusted
+[0:36:24.615292120] [26292]  INFO Camera camera.cpp:1215 configuring streams: (0) 1296x972-YUV420/sYCC (1) 1296x972-SGBRG10_CSI2P/RAW
+[0:36:24.615724175] [26297]  INFO RPI vc4.cpp:615 Sensor: /base/soc/i2c0mux/i2c@1/ov5647@36 - Selected sensor format: 1296x972-SGBRG10_1X10/RAW - Selected unicam format: 1296x972-pGAA/RAW
+[0:36:25.726368551] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:25.726467380] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:25.726484360] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:25.726499952] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:26.836986574] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:26.837082959] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:26.837099866] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:26.837115865] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:27.948998499] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:27.949095217] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:27.949112772] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:27.949128401] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:29.053503828] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:29.053670413] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:29.053689227] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:29.053706652] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:30.169670421] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:30.169829822] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:30.169872079] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:30.169912762] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:31.292445353] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:31.292615105] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:31.292659362] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:31.292711989] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:32.411687236] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:32.411839508] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:32.411881969] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:32.411920023] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:33.539639958] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:33.539805561] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:33.539847800] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:33.539887280] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:34.668841827] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:34.668931489] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:34.668948970] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:34.668964617] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:35.776976494] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:35.777073638] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:35.777090526] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:35.777105859] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:36.881807698] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:36.881904879] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:36.881922248] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:36.881938618] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:37.985900511] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:37.985996692] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:37.986014469] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:37.986029802] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:39.088930628] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:39.089157174] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:39.089210431] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:39.089257095] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:40.236684288] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:40.236860836] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:40.236909426] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:40.236955239] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:41.384826911] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:41.384993329] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:41.385042846] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:41.385088288] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:42.530239841] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:42.530416870] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:42.530467886] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:42.530513366] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:43.674379178] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:43.674563447] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:43.674613778] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:43.674660998] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:44.809590260] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:44.809768122] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:44.809819787] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:44.809865396] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:45.953366113] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:45.953539846] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:45.953590066] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:45.953635082] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:47.100616940] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:47.100793970] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:47.100844134] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:47.100889873] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:48.252649835] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:48.252821975] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:48.252872251] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:48.252918101] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:49.400761883] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:49.400981022] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:49.401032501] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:49.401078740] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:50.552644895] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:50.552811628] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:50.552860904] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:50.552907846] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:51.700772387] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:51.700938157] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:51.700989470] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:51.701034727] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:52.852832724] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:52.853012401] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:52.853062250] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:52.853106804] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:53.991480971] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:53.991655167] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:53.991704757] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:53.991751885] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:55.137910522] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:55.138089940] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:55.138139474] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:55.138184824] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:56.284139581] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:56.284300962] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:56.284350627] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:56.284396162] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:57.430009563] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:57.430200092] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:57.430249904] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:57.430296162] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:58.569344689] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:58.569526126] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:58.569575772] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:58.569621196] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:36:59.704628052] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:36:59.704755194] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:36:59.704772378] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:36:59.704787915] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:37:00.817042598] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:37:00.817142501] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:37:00.817160019] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:37:00.817176129] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:37:01.929030944] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:37:01.929160920] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:37:01.929179363] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:37:01.929195400] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:37:03.041046309] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:37:03.041144934] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:37:03.041162082] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:37:03.041178118] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:37:04.149085316] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:37:04.149258290] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:37:04.149307584] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:37:04.149354230] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:37:05.280700368] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:37:05.280870750] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:37:05.280914155] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:37:05.280954561] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:37:06.428840815] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:37:06.428975328] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:37:06.429009178] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:37:06.429040417] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:37:07.569588556] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:37:07.569758863] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:37:07.569778696] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:37:07.569795751] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:37:08.681035123] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:37:08.681132156] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:37:08.681149951] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:37:08.681165858] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+[0:37:09.792876304] [26297]  WARN V4L2 v4l2_videodevice.cpp:2155 /dev/video0[10:cap]: Dequeue timer of 1000000.00us has expired!
+[0:37:09.792973615] [26297] ERROR RPI pipeline_base.cpp:1346 Camera frontend has timed out!
+[0:37:09.792990447] [26297] ERROR RPI pipeline_base.cpp:1347 Please check that your camera sensor connector is attached securely.
+[0:37:09.793006002] [26297] ERROR RPI pipeline_base.cpp:1348 Alternatively, try another cable and/or sensor.
+ERROR: Device timeout detected, attempting a restart!!!
+^C
