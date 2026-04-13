@@ -1,58 +1,14 @@
-hoanglong@hoanglong:~ $ sudo apt update
-Ign:1 http://raspbian.raspberrypi.com/raspbian bookworm InRelease
-Ign:2 http://archive.raspberrypi.com/debian bookworm InRelease
-Ign:1 http://raspbian.raspberrypi.com/raspbian bookworm InRelease
-Ign:2 http://archive.raspberrypi.com/debian bookworm InRelease
-Ign:1 http://raspbian.raspberrypi.com/raspbian bookworm InRelease
-Ign:2 http://archive.raspberrypi.com/debian bookworm InRelease
-Err:1 http://raspbian.raspberrypi.com/raspbian bookworm InRelease
-  Temporary failure resolving 'raspbian.raspberrypi.com'
-Err:2 http://archive.raspberrypi.com/debian bookworm InRelease
-  Temporary failure resolving 'archive.raspberrypi.com'
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-All packages are up to date.
-W: Failed to fetch http://raspbian.raspberrypi.com/raspbian/dists/bookworm/InRelease  Temporary failure resolving 'raspbian.raspberrypi.com'
-W: Failed to fetch http://archive.raspberrypi.com/debian/dists/bookworm/InRelease  Temporary failure resolving 'archive.raspberrypi.com'
-W: Some index files failed to download. They have been ignored, or old ones used instead.
-hoanglong@hoanglong:~ $ sudo apt update -y
-Ign:1 http://raspbian.raspberrypi.com/raspbian bookworm InRelease
-Ign:2 http://archive.raspberrypi.com/debian bookworm InRelease
-Ign:1 http://raspbian.raspberrypi.com/raspbian bookworm InRelease
-Ign:2 http://archive.raspberrypi.com/debian bookworm InRelease
-Ign:1 http://raspbian.raspberrypi.com/raspbian bookworm InRelease
-Ign:2 http://archive.raspberrypi.com/debian bookworm InRelease
-Err:1 http://raspbian.raspberrypi.com/raspbian bookworm InRelease
-  Temporary failure resolving 'raspbian.raspberrypi.com'
-Err:2 http://archive.raspberrypi.com/debian bookworm InRelease
-  Temporary failure resolving 'archive.raspberrypi.com'
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-All packages are up to date.
-W: Failed to fetch http://raspbian.raspberrypi.com/raspbian/dists/bookworm/InRelease  Temporary failure resolving 'raspbian.raspberrypi.com'
-W: Failed to fetch http://archive.raspberrypi.com/debian/dists/bookworm/InRelease  Temporary failure resolving 'archive.raspberrypi.com'
-W: Some index files failed to download. They have been ignored, or old ones used instead.
-hoanglong@hoanglong:~ $ vcgencmd measure_temp
-temp=42.8'C
-hoanglong@hoanglong:~ $ sudo apt install libcamera-apps -y
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-The following NEW packages will be installed:
-  libcamera-apps
-0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
-Need to get 3,918 B of archives.
-After this operation, 10.2 kB of additional disk space will be used.
-Ign:1 http://archive.raspberrypi.com/debian bookworm/main armhf libcamera-apps all 1.9.0-1~bpo12+1
-Ign:1 http://archive.raspberrypi.com/debian bookworm/main armhf libcamera-apps all 1.9.0-1~bpo12+1
-Ign:1 http://archive.raspberrypi.com/debian bookworm/main armhf libcamera-apps all 1.9.0-1~bpo12+1
-Ign:1 http://archive.raspberrypi.com/debian bookworm/main armhf libcamera-apps all 1.9.0-1~bpo12+1
-Err:1 http://archive.raspberrypi.com/debian bookworm/main armhf libcamera-apps all 1.9.0-1~bpo12+1
-  Temporary failure resolving 'archive.raspberrypi.com'
-E: Failed to fetch http://archive.raspberrypi.com/debian/pool/main/r/rpicam-apps/libcamera-apps_1.9.0-1%7ebpo12%2b1_all.deb  Temporary failure resolving 'archive.raspberrypi.com'
-E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+hoanglong@hoanglong:~ $ ping -c 3 google.com
+PING google.com (142.250.71.174) 56(84) bytes of data.
+64 bytes from nchkga-ab-in-f14.1e100.net (142.250.71.174): icmp_seq=1 ttl=117 time=25.0 ms
+64 bytes from nchkga-ab-in-f14.1e100.net (142.250.71.174): icmp_seq=2 ttl=117 time=453 ms
+64 bytes from nchkga-ab-in-f14.1e100.net (142.250.71.174): icmp_seq=3 ttl=117 time=25.0 ms
+
+--- google.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2700ms
+rtt min/avg/max/mdev = 24.983/167.542/452.627/201.585 ms
+hoanglong@hoanglong:~ $ libcamera-hello
+bash: libcamera-hello: command not found
 hoanglong@hoanglong:~ $ vcgencmd get_camera
 supported=0 detected=0, libcamera interfaces=0
 hoanglong@hoanglong:~ $ 
