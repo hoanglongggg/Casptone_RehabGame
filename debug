@@ -1,23 +1,19 @@
-cap]: Failed to queue buffer 2: Input/output error
-[0:40:54.814485984] [26490] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
-[0:40:54.846787683] [26490] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 3: Input/output error
-[0:40:54.846868976] [26490] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
-[0:40:54.905295755] [26490] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 0: Input/output error
-[0:40:54.905386399] [26490] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
-ERROR: Device timeout detected, attempting a restart!!!
-[0:40:54.933290526] [26490] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 1: Input/output error
-[0:40:54.933383207] [26490] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
-[0:40:54.965215299] [26490] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 2: Input/output error
-[0:40:54.965294036] [26490] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
-[0:40:54.991403116] [26490] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 3: Input/output error
-[0:40:54.991491279] [26490] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
-[0:40:55.053289642] [26490] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 0: Input/output error
-[0:40:55.053381508] [26490] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
-ERROR: Device timeout detected, attempting a restart!!!
-[0:40:55.079298283] [26490] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 1: Input/output error
-[0:40:55.079375835] [26490] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
-[0:40:55.112285877] [26490] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 2: Input/output error
-[0:40:55.112375076] [26490] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
-[0:40:55.137303249] [26490] ERROR V4L2 v4l2_videodevice.cpp:1825 /dev/video0[10:cap]: Failed to queue buffer 3: Input/output error
-[0:40:55.137387708] [26490] ERROR RPISTREAM rpi_stream.cpp:276 Failed to queue buffer for Unicam Image
-^C
+from picamera2 import Picamera2
+import cv2
+
+picam2 = Picamera2()
+picam2.preview_configuration.main.size = (640, 480)
+picam2.preview_configuration.main.format = "RGB888"
+picam2.configure("preview")
+
+picam2.start()
+
+while True:
+    frame = picam2.capture_array()
+    cv2.imshow("Camera V2", frame)
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+cv2.destroyAllWindows()
+picam2.stop()
